@@ -1,0 +1,19 @@
+﻿  AppDelegate.cpp
+  HelloWorldScene.cpp
+  main.cpp
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\base\ccutf8.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています main.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\base\ccutf8.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\HelloWorldScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\base\ccutf8.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\AppDelegate.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています main.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\HelloWorldScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\AppDelegate.cpp)
+c:\users\s162090\documents\shark\sharkgame\classes\appdelegate.cpp(40): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\HelloWorldScene.cpp)
+  60 個のファイルをコピーしました
+AppDelegate.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
+     ライブラリ C:\Users\s162090\Documents\Shark\SharkGame\proj.win32\Debug.win32\SharkGame.lib とオブジェクト C:\Users\s162090\Documents\Shark\SharkGame\proj.win32\Debug.win32\SharkGame.exp を作成中
+  SharkGame.vcxproj -> C:\Users\s162090\Documents\Shark\SharkGame\proj.win32\Debug.win32\SharkGame.exe
+  SharkGame.vcxproj -> C:\Users\s162090\Documents\Shark\SharkGame\proj.win32\Debug.win32\SharkGame.pdb (Full PDB)
+  C:\Users\s162090\Documents\Shark\SharkGame\Resources\res\HelloWorld.png -> C:\Users\s162090\Documents\Shark\SharkGame\proj.win32\Debug.win32\res\HelloWorld.png
+  C:\Users\s162090\Documents\Shark\SharkGame\Resources\res\MainScene.csb -> C:\Users\s162090\Documents\Shark\SharkGame\proj.win32\Debug.win32\res\MainScene.csb
+  2 個のファイルをコピーしました
