@@ -1,14 +1,65 @@
-﻿  PlayScene.cpp
+﻿  HelloWorldScene.cpp
+  PlayScene.cpp
+  ResultScene.cpp
   TitleScene.cpp
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\base\ccutf8.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\PlayScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\base\ccutf8.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\HelloWorldScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\base\ccutf8.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\ResultScene.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\base\ccutf8.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\TitleScene.cpp)
-c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\PlayScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\HelloWorldScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\ResultScene.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\TitleScene.cpp)
-c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\PlayScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\PlayScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\ResultScene.cpp)
 c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\TitleScene.cpp)
+c:\cocos\cocos2d-x\cocos2d-x-3.10\cocos\ui\uiscale9sprite.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。 (ソース ファイルをコンパイルしています ..\Classes\HelloWorldScene.cpp)
   60 個のファイルをコピーしました
 AppDelegate.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
-     ライブラリ C:\Users\s162166\Documents\Shark\SharkGame\proj.win32\Debug.win32\SharkGame.lib とオブジェクト C:\Users\s162166\Documents\Shark\SharkGame\proj.win32\Debug.win32\SharkGame.exp を作成中
-  SharkGame.vcxproj -> C:\Users\s162166\Documents\Shark\SharkGame\proj.win32\Debug.win32\SharkGame.exe
-  SharkGame.vcxproj -> C:\Users\s162166\Documents\Shark\SharkGame\proj.win32\Debug.win32\SharkGame.pdb (Full PDB)
-  0 個のファイルをコピーしました
+     ライブラリ C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\SharkGame.lib とオブジェクト C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\SharkGame.exp を作成中
+  SharkGame.vcxproj -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\SharkGame.exe
+  SharkGame.vcxproj -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\SharkGame.pdb (Full PDB)
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\gameover.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\gameover.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\Play-button.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\Play-button.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\sea.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\sea.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\Shark_aki.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\Shark_aki.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\Shark_toji.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\Shark_toji.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\title.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\title.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_1.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_1.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_10.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_10.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_11.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_11.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_12.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_12.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_13.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_13.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_14.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_14.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_15.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_15.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_16.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_16.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_17.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_17.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_18.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_18.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_19.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_19.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_2.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_2.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_3.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_3.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_4.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_4.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_5.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_5.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_6.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_6.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_7.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_7.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_8.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_8.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_red_9.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_red_9.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_1.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_1.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_10.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_10.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_11.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_11.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_12.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_12.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_13.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_13.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_14.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_14.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_15.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_15.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_16.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_16.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_17.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_17.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_18.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_18.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_19.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_19.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_2.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_2.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_3.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_3.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_4.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_4.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_5.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_5.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_6.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_6.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_7.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_7.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_8.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_8.png
+  C:\Users\s162090\Documents\SharkGame\SharkGame\Resources\res\tooth_white_9.png -> C:\Users\s162090\Documents\SharkGame\SharkGame\proj.win32\Debug.win32\res\tooth_white_9.png
+  44 個のファイルをコピーしました
