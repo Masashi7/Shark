@@ -31,6 +31,14 @@ bool ResultScene::init()
 		// 基底クラスの初期化が失敗なら、異常終了
 		return false;
 	}
+	Size winSize = Director::getInstance()->getWinSize();
+	Point origin = Director::getInstance()->getVisibleOrigin();
+
+	auto background = Sprite::create("gameover.png");
+
+	background->setPosition(Point(winSize.width / 2, winSize.height / 2));
+
+	this->addChild(background,0);
 
 	// 毎フレーム更新を有効化
 	scheduleUpdate();
@@ -42,5 +50,13 @@ bool ResultScene::init()
 // 毎フレーム更新
 void ResultScene::update(float delta)
 {
+	
+	Scene* nextScene = TitleScene::create();
+
+	TransitionFade* fade = TransitionFade::create(2.0f, nextScene, Color3B::BLACK);
+	
+	// 次のシーンに移行
+	//_director->replaceScene(nextScene);
+	Director::getInstance()->replaceScene(fade);
 
 }
