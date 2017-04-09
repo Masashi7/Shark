@@ -25,8 +25,8 @@ Scene* HelloWorld::createScene()
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
-    /**  you can create scene with following comment code instead of using csb file.
-    // 1. super init first
+    //**  you can create scene with following comment code instead of using csb file.
+    //1. super init first
     if ( !Layer::init() )
     {
         return false;
@@ -40,7 +40,7 @@ bool HelloWorld::init()
     //    you may modify it.
 
     // add a "close" icon to exit the progress. it's an autorelease object
-    auto closeItem = MenuItemImage::create(
+    /*auto closeItem = MenuItemImage::create(
                                            "CloseNormal.png",
                                            "CloseSelected.png",
                                            CC_CALLBACK_1(HelloWorld::menuCloseCallback, this));
@@ -51,7 +51,7 @@ bool HelloWorld::init()
     // create menu, it's an autorelease object
     auto menu = Menu::create(closeItem, NULL);
     menu->setPosition(Vec2::ZERO);
-    this->addChild(menu, 1);
+    this->addChild(menu, 1);*/
 
     /////////////////////////////
     // 3. add your codes below...
@@ -59,7 +59,7 @@ bool HelloWorld::init()
     // add a label shows "Hello World"
     // create and initialize a label
     
-    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
+    /*auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
@@ -75,8 +75,8 @@ bool HelloWorld::init()
     sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
-    this->addChild(sprite, 0);
-    **/
+    this->addChild(sprite, 0);*/
+    
     
     //////////////////////////////
     // 1. super init first
@@ -85,7 +85,7 @@ bool HelloWorld::init()
         return false;
     }
     
-   // auto rootNode = CSLoader::createNode("MainScene.csb");
+    auto rootNode = CSLoader::createNode("MainScene.csb");
 
     addChild(rootNode);
 

@@ -30,6 +30,11 @@ bool PlayScene::init()
 		return false;
 	}
 
+	// 背景画像
+	Sprite* background2 = Sprite::create("play.png");
+	background2->setPosition(480, 320);
+	this->addChild(background2);
+
 	// 毎フレーム更新を有効化
 	scheduleUpdate();
 
@@ -45,17 +50,17 @@ bool PlayScene::init()
 // 毎フレーム更新
 void PlayScene::update(float delta)
 {
-	// 次のシーンを作成する
-	Scene* nextScene = StaffRollScene::create();
+	/*// 次のシーンを作成する
+	Scene* nextScene = ResultScene::create();
 	// 次のシーンに移行
-	_director->replaceScene(nextScene);
+	_director->replaceScene(nextScene);*/
 }
 
 // タッチ開始時コールバック
 bool PlayScene::onTouchBegan(Touch* touch, Event* pEvent)
 {
 	// 次のシーンを作成する
-	Scene* nextScene = ResultScene::create();
+	Scene* nextScene = TitleScene::create();
 
 	// 次のシーンに移行
 	_director->replaceScene(nextScene);
