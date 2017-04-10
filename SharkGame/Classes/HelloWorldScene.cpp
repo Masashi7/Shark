@@ -36,6 +36,7 @@ bool HelloWorld::init()
     //Scene* scene = TitleScene::create();
 	Scene* scene = PlayScene::create();
     Scene* scene = TitleScene::create();
+
 	addChild(scene);
 
     return true;
