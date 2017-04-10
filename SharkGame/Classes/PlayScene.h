@@ -1,6 +1,7 @@
 #pragma once
 
 #include "cocos2d.h"
+#include "audio\include\AudioEngine.h"
 
 #define TOOTH_NUM 19	//éïÇÃêî
 
@@ -9,7 +10,6 @@ class PlayScene : public cocos2d::Scene
 {
 	protected:
 		cocos2d::Sprite* m_pTeeth[TOOTH_NUM];
-		//cocos2d::Sprite* m_pTeeth = new cocos2d::Sprite[19];
 		cocos2d::Sprite* m_pBackGround;
 		cocos2d::Sprite* m_pShark;
 
@@ -28,5 +28,4 @@ class PlayScene : public cocos2d::Scene
 
 		void CreateSprite();
 		void ChangeTexter(int texterNumber);
-		void FinishGame();
 };

@@ -1,9 +1,12 @@
 #include "PlayScene.h"
 #include "ResultScene.h"
+#include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 
 using namespace cocos2d;
+using namespace cocos2d::experimental;
+using namespace CocosDenshion;
 
 PlayScene* PlayScene::create()
 {
@@ -39,6 +42,10 @@ bool PlayScene::init()
 	}
 
 	CreateSprite();
+
+	int bgm = cocos2d::experimental::AudioEngine::play2d("playbgm.mp3");;
+
+	AudioEngine::setLoop(bgm, true);
 
 	// 毎フレーム更新を有効化
 	scheduleUpdate();
@@ -76,24 +83,36 @@ bool PlayScene::onTouchBegan(Touch* touch, Event* pEvent)
 
 		if ((hit == true && i == m_deadNumber))
 		{
-			FinishGame();
+			int id = AudioEngine::play2d("dead.mp3");
+
+			for (int i = 0; i < 19; i++)
+			{
+				m_pTeeth[i]->removeFromParent();
+			}
+
+			m_pShark->setTexture("Shark_toji.png");
+			m_pShark->setPosition(Vec2(480, 210));
+
+			AudioEngine::uncache("playbgm.mp3");
+
 			// 次のシーンを作成する
 			Scene* nextScene = ResultScene::create();
 
 			// フェードアウトトランジション
-			nextScene = TransitionFade::create(3.0f, nextScene, Color3B(255, 255, 255));
+			nextScene = TransitionFade::create(4.0f, nextScene, Color3B::BLACK);
 
 			// 次のシーンに移行
 			_director->replaceScene(nextScene);
 		}
 		else if (hit == true && m_teethFlag[i] != 1)
 		{
+			int id = AudioEngine::play2d("battle06.mp3");
+
 			ChangeTexter(i);
 			break;
 		}
 	}
 	
-
 	return false;
 }
 
@@ -103,6 +122,7 @@ void PlayScene::CreateSprite()
 	// 背景
 	m_pBackGround = Sprite::create("sea.png");
 	m_pBackGround->setPosition(Vec2(480, 320));
+	m_pBackGround->setScale(1.5f);
 	addChild(m_pBackGround);
 
 	// 歯
@@ -239,15 +259,4 @@ void PlayScene::ChangeTexter(int texterNumber)
 	}
 
 	m_teethFlag[texterNumber] = 1;
-}
-
-void PlayScene::FinishGame()
-{
-	for (int i = 0; i < 19; i++)
-	{
-		m_pTeeth[i]->removeFromParent();
-	}
-
-	m_pShark->setTexture("Shark_toji.png");
-	m_pShark->setPosition(Vec2(480, 210));
 }
