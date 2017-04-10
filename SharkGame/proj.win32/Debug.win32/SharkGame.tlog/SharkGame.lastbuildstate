@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v140_xp:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=
-Debug|Win32|C:\Users\s162166\Documents\Shark\SharkGame\proj.win32\|
-=======
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v140_xp:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
-Debug|Win32|C:\Users\s152119\Desktop\shark\SharkGame\proj.win32\|
->>>>>>> 4f1fe524303dd31f5d2e06bdb2f932c4d10b561b

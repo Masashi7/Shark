@@ -1,6 +1,9 @@
 #include "AppDelegate.h"
 #include "TitleScene.h"
 #include "PlayScene.h"
+#include "audio\include\AudioEngine.h"
+
+using namespace cocos2d::experimental;
 
 USING_NS_CC;
 
@@ -29,6 +32,12 @@ bool TitleScene::init()
 		// 基底クラスの初期化が失敗なら、異常終了
 		return false;
 	}
+
+	//BGM再生
+	titlebgm = AudioEngine::play2d("titlebgm.mp3");
+	
+	//ループ再生
+	AudioEngine::setLoop(titlebgm, true);
 
 	// 背景画像
 	Sprite* background = Sprite::create("Titlebg.png");
@@ -101,9 +110,9 @@ bool TitleScene::init()
 	listener->onTouchBegan = CC_CALLBACK_2(TitleScene::onTouchBegan, this);
 	_director->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
 
-	Start->addTouchEventListener(CC_CALLBACK_2(TitleScene::onButtonClick, this));
+	Start->addTouchEventListener(CC_CALLBACK_2(TitleScene::onStartClick, this));
 
-
+	Exit->addTouchEventListener(CC_CALLBACK_2(TitleScene::onExitClick, this));
 
 	// 初期化が正常終了
 	return true;
@@ -121,18 +130,34 @@ bool TitleScene::onTouchBegan(Touch* touch, Event* pEvent)
 	return false;
 }
 
-void TitleScene::onButtonClick(Ref* ref, cocos2d::ui::Widget::TouchEventType eventType)
+//Startボタンを押したとき
+void TitleScene::onStartClick(Ref* ref, cocos2d::ui::Widget::TouchEventType eventType)
 {
 	if (eventType == ui::Widget::TouchEventType::ENDED)
 	{
+		int startse = AudioEngine::play2d("enter.mp3");
+
+		AudioEngine::uncache("titlebgm.mp3");
+
 		// 次のシーンを作成する
 		Scene* nextScene = PlayScene::create();
-
-		// フェードアウトトランジション
-		//nextScene = TransitionFade::create(1.0f, nextScene, Color3B(255, 255, 0));
-		//nextScene = TransitionOriginal::create(1.0f, nextScene);
 
 		// 次のシーンに移行
 		_director->replaceScene(nextScene);
 	}
 }
+
+//Exitを押したとき
+void TitleScene::onExitClick(Ref * ref, cocos2d::ui::Widget::TouchEventType eventType)
+{
+	if (eventType == ui::Widget::TouchEventType::ENDED)
+	{
+		int exitse = AudioEngine::play2d("exit.mp3");
+
+		Sleep(1 * 1000);
+
+		exit(0);
+	}
+}
+
+

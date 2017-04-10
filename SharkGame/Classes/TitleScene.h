@@ -15,7 +15,8 @@ public:
 
 	void update(float delta) override;
 	bool onTouchBegan(cocos2d::Touch * touch, cocos2d::Event * pEvent);
-	void onButtonClick(Ref* ref ,cocos2d::ui::Widget::TouchEventType eventType);
+	void onStartClick(Ref* ref, cocos2d::ui::Widget::TouchEventType eventType);
+	void onExitClick(Ref* ref, cocos2d::ui::Widget::TouchEventType eventType);
 
 	cocos2d::Sprite* background = nullptr; //背景画像
 
@@ -32,5 +33,9 @@ public:
 	cocos2d::Sprite* fish3 = nullptr;	  //魚(空色)
 
 	cocos2d::Sprite* fish4 = nullptr;	  //魚(紫色)
+
+private:
+
+	int titlebgm;						  //タイトルBGM
 
 };
