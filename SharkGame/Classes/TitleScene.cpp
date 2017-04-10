@@ -1,3 +1,4 @@
+#include "AppDelegate.h"
 #include "TitleScene.h"
 #include "PlayScene.h"
 
@@ -32,21 +33,64 @@ bool TitleScene::init()
 	// 背景画像
 	Sprite* background = Sprite::create("Titlebg.png");
 	background->setPosition(480, 320);
+	background->setScale(1.5f);
 	this->addChild(background);
+
+	//魚(青色)画像
+	Sprite* fish1 = Sprite::create("fish1.png");
+	fish1->setPosition(1000, 0);
+	this->addChild(fish1);
+
+	//魚(青色)移動
+	MoveTo* fish1move = MoveTo::create(2.0f, Vec2(250, 250));
+	fish1->runAction(fish1move);
+
+	//魚(黄色)画像
+	Sprite* fish2 = Sprite::create("fish2.png");
+	fish2->setPosition(1000, 0);
+	this->addChild(fish2);
+
+	//魚(黄色)移動
+	MoveTo* fish2move = MoveTo::create(2.0f, Vec2(250, 340));
+	fish2->runAction(fish2move);
+
+	//魚(空色)画像
+	Sprite* fish3 = Sprite::create("fish3.png");
+	fish3->setPosition(1000, 0);
+	this->addChild(fish3);
+
+	//魚(空色)移動
+	MoveTo* fish3move = MoveTo::create(2.0f, Vec2(110, 300));
+	fish3->runAction(fish3move);
+
+	//魚(紫色)画像
+	Sprite* fish4 = Sprite::create("fish4.png");
+	fish4->setPosition(1000,0);
+	this->addChild(fish4);
+
+	//魚(紫色)移動
+	MoveTo* fish4move = MoveTo::create(2.0f, Vec2(75, 370));
+	fish4->runAction(fish4move);
 
 	// タイトル画像
 	Sprite* Title = Sprite::create("Title.png");
-	Title->setPosition(480, 0);
+	Title->setPosition(500, 520);
 	this->addChild(Title);
+
+	//タイトル拡大
+	ScaleBy* TitleScale = ScaleBy::create(2.0f, 1.5f);
+	Title->runAction(TitleScale);
 
 	//スタートボタン画像
 	ui::Button* Start = ui::Button::create("Start.png");
-	Start->setPosition(Vec2(480, 100));
+	Start->setPosition(Vec2(510, 180));
+	Start->setScale(1.5f);
 	this->addChild(Start);
 
 	//Exitボタン画像
 	ui::Button* Exit = ui::Button::create("Exit.png");
-	Exit->setPosition(Vec2(480, 50));
+	Exit->setPosition(Vec2(510, 60));
+	Exit->setScale(1.5f);
 	this->addChild(Exit);
 
 	// 毎フレーム更新を有効化
@@ -57,7 +101,9 @@ bool TitleScene::init()
 	listener->onTouchBegan = CC_CALLBACK_2(TitleScene::onTouchBegan, this);
 	_director->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
 
-	button->addTouchEventListener(CC_CALLBACK_2(TitleScene::onButtonClick, this));
+	Start->addTouchEventListener(CC_CALLBACK_2(TitleScene::onButtonClick, this));
+
+
 
 	// 初期化が正常終了
 	return true;
