@@ -30,13 +30,24 @@ bool TitleScene::init()
 	}
 
 	// 背景画像
-	Sprite* background = Sprite::create("title.png");
+	Sprite* background = Sprite::create("Titlebg.png");
 	background->setPosition(480, 320);
 	this->addChild(background);
 
-	ui::Button* button = ui::Button::create("play-button.png");
-	button->setPosition(Vec2(480, 100));
-	this->addChild(button);
+	// タイトル画像
+	Sprite* Title = Sprite::create("Title.png");
+	Title->setPosition(480, 0);
+	this->addChild(Title);
+
+	//スタートボタン画像
+	ui::Button* Start = ui::Button::create("Start.png");
+	Start->setPosition(Vec2(480, 100));
+	this->addChild(Start);
+
+	//Exitボタン画像
+	ui::Button* Exit = ui::Button::create("Exit.png");
+	Exit->setPosition(Vec2(480, 50));
+	this->addChild(Exit);
 
 	// 毎フレーム更新を有効化
 	scheduleUpdate();
