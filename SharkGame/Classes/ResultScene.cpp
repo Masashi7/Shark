@@ -103,12 +103,10 @@ void ResultScene::onButtonClick(Ref* ref, cocos2d::ui::Widget::TouchEventType ev
 {
 	if (eventType == ui::Widget::TouchEventType::ENDED)
 	{
+		AudioEngine::uncache("resultbgm.mp3");
+
 		// 次のシーンを作成する
 		Scene* nextScene = TitleScene::create();
-
-		// フェードアウトトランジション
-		//nextScene = TransitionFade::create(1.0f, nextScene, Color3B(255, 255, 0));
-		//nextScene = TransitionOriginal::create(1.0f, nextScene);
 
 		// 次のシーンに移行
 		_director->replaceScene(nextScene);
